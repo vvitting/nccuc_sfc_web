@@ -13,7 +13,6 @@ export default function AboutContactPage() {
           className="leading-8 text-gray-700 text-justify"
           style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
         >
-          （此處可放置聯絡資訊，例如中心地址、聯絡電話、電子郵件信箱，以及聯絡窗口姓名與職稱。未來亦可新增聯絡表單或地圖嵌入，方便外界與中心聯繫。）
           聯絡中心：彭青惠 經理
           電話：02-29393091*81108
           E-MAIL：135360@nccu.edu.tw
