@@ -13,10 +13,10 @@ export default function AboutContactPage() {
           className="leading-8 text-gray-700 text-justify"
           style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
         >
-          聯絡中心：彭青惠 經理
-          電話：02-29393091*81108
-          E-MAIL：135360@nccu.edu.tw
-          中心地址：11605 台北市文山區指南路二段64號(政大商學院8樓81108室)
+          聯絡中心：彭青惠 經理 <br />
+          電話：02-29393091*81108 <br />
+          E-MAIL：135360@nccu.edu.tw <br />
+          中心地址：11605 台北市文山區指南路二段64號(政大商學院8樓81108室) <br />
 
         </p>
       </section>
