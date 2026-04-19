@@ -15,7 +15,7 @@ export default function Header() {
     {
       label: "最新消息",
       items: [
-        { label: "相關活動", href: "#news-events" },
+        { label: "相關活動", href: "/latest_news" },
       ],
     },
     {
