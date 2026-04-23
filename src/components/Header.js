@@ -21,16 +21,15 @@ export default function Header() {
     {
       label: "永續財務資訊",
       items: [
-        { label: "永續金融", href: "#info-sustainable-finance" },
-        { label: "永續財務", href: "#info-sustainable-accounting" },
-        { label: "新知(新聞、報導)", href: "#info-news" },
+        { label: "永續新知", href: "/finance_information/news" },
+        { label: "永續財務相關法規", href: "/finance_information/relevant_regulations" },
       ],
     },
     {
       label: "中心研究成果",
       items: [
-        { label: "永續財務研究", href: "#research-studies" },
-        { label: "永續財務決策方案", href: "#research-solutions" },
+        { label: "永續財務研究", href: "/research_result/research_studies" },
+        { label: "永續財務決策方案", href: "/research_result/research_solutions" },
       ],
     },
     {
