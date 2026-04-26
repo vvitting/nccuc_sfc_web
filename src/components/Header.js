@@ -98,6 +98,8 @@ export default function Header() {
                   <a
                     key={subItem.label}
                     href={subItem.href}
+                    target={subItem.target}
+                    rel={subItem.target === "_blank" ? "noopener noreferrer" : undefined}
                     className="block px-4 py-2 text-sm text-gray-700 whitespace-nowrap hover:bg-blue-50 hover:text-blue-800"
                   >
                     {subItem.label}
