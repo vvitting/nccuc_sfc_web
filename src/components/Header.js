@@ -35,14 +35,13 @@ export default function Header() {
     {
       label: "永續財務相關連結",
       items: [
-        { label: "永續財務相關法規", href: "#links-regulation" },
         { label: "ESG接軌IFRS永續揭露準則", href: "#links-esg-ifrs" },
-        { label: "金融監督管理委員會", href: "#links-fsc" },
-        { label: "證券櫃檯買賣中心", href: "#links-otc" },
-        { label: "台灣證券交易所", href: "#links-twse" },
-        { label: "台灣期貨交易所", href: "#links-taifex" },
+        { label: "金融監督管理委員會", href: "https://www.fsc.gov.tw/ch/index.jsp" },
+        { label: "證券櫃檯買賣中心", href: "https://www.tpex.org.tw/zh-tw/index.html" },
+        { label: "台灣證券交易所", href: "https://www.twse.com.tw/zh/index.html" },
+        { label: "台灣期貨交易所", href: "https://www.taifex.com.tw/cht/index" },
         { label: "台灣期中保管結算所", href: "#links-tdcc" },
-        { label: "財團法人會計研究發展基金會環境部", href: "#links-aicpa-env" },
+        { label: "財團法人會計研究發展基金會環境部", href: "https://www.ardf.org.tw/" },
       ],
     },
   ];
