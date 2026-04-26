@@ -35,13 +35,13 @@ export default function Header() {
     {
       label: "永續財務相關連結",
       items: [
-        { label: "ESG接軌IFRS永續揭露準則", href: "#links-esg-ifrs" },
-        { label: "金融監督管理委員會", href: "https://www.fsc.gov.tw/ch/index.jsp" },
-        { label: "證券櫃檯買賣中心", href: "https://www.tpex.org.tw/zh-tw/index.html" },
-        { label: "台灣證券交易所", href: "https://www.twse.com.tw/zh/index.html" },
-        { label: "台灣期貨交易所", href: "https://www.taifex.com.tw/cht/index" },
-        { label: "台灣期中保管結算所", href: "#links-tdcc" },
-        { label: "財團法人會計研究發展基金會環境部", href: "https://www.ardf.org.tw/" },
+        { label: "ESG接軌IFRS永續揭露準則", href: "#links-esg-ifrs", target: "_blank" },
+        { label: "金融監督管理委員會", href: "https://www.fsc.gov.tw/ch/index.jsp", target: "_blank" },
+        { label: "證券櫃檯買賣中心", href: "https://www.tpex.org.tw/zh-tw/index.html", target: "_blank" },
+        { label: "台灣證券交易所", href: "https://www.twse.com.tw/zh/index.html", target: "_blank" },
+        { label: "台灣期貨交易所", href: "https://www.taifex.com.tw/cht/index", target: "_blank" },
+        { label: "台灣期中保管結算所", href: "#links-tdcc", target: "_blank" },
+        { label: "財團法人會計研究發展基金會環境部", href: "https://www.ardf.org.tw/", target: "_blank" },
       ],
     },
   ];
