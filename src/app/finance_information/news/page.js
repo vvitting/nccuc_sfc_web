@@ -10,7 +10,7 @@ export default function AboutContactPage() {
         </h1>
 
         <p
-            className="leading-8 text-gray-700 text-justify"
+            className="leading-8 text-gray-700 text-justify text-lg"
             style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
         >
             金管會提醒上市上櫃公司注意適用IFRS永續揭露準則之時程，及早因應準備以順利接軌(2026020) <br />

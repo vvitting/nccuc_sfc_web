@@ -10,7 +10,7 @@ export default function AboutTeamPage() {
         </h1>
 
         <p
-          className="leading-8 text-gray-700 text-justify"
+          className="leading-8 text-gray-700 text-justify text-lg"
           style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
         >
           coming soon

@@ -10,7 +10,7 @@ export default function AboutContactPage() {
         </h1>
 
         <p
-          className="leading-8 text-gray-700 text-justify"
+          className="leading-8 text-gray-700 text-justify text-lg"
           style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
         >
           聯絡中心：彭青惠 經理 <br />
