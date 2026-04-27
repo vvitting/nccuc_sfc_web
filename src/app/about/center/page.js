@@ -10,7 +10,7 @@ export default function AboutCenterPage() {
         </h1>
 
         <p
-          className="leading-8 text-gray-700 text-justify"
+          className="leading-8 text-gray-700 text-base"
           style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
         >
           本中心為學術研究型之跨系所研究中心，設立之宗旨及目的如下：提供政策建議：通過國際倡議等相關議題的研究、分析政府永續金融政策，向政府和監管機構提供政策建議，以促進金融體系支持永續發展。提供財務決策建議與政策參考：透過國際倡議及相關議題的研究，分析政府永續金融政策之設計與施行成效，作為提供企業財務決策建議之依據，並供政府部門與監管機構於後續政策研擬與調整時參考，以促進金融體系支持永續發展。
