@@ -41,7 +41,8 @@ export default function Header() {
         { label: "台灣證券交易所", href: "https://www.twse.com.tw/zh/index.html", target: "_blank" },
         { label: "台灣期貨交易所", href: "https://www.taifex.com.tw/cht/index", target: "_blank" },
         { label: "台灣集中保管結算所", href: "https://www.tdcc.com.tw/portal/zh/", target: "_blank" },
-        { label: "財團法人會計研究發展基金會環境部", href: "https://www.moenv.gov.tw/information-service/govinfo/budget-implementation-status/subsidies/foundation/2485.html", target: "_blank" },
+        { label: "財團法人會計研究發展基金會", href: "https://www.ardf.org.tw/", target: "_blank" },
+        { label: "環境部", href: "https://www.moenv.gov.tw/", target: "_blank" },
       ],
     },
   ];
