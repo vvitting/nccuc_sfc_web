@@ -87,7 +87,8 @@ export default function Banner({ images }) {
       {/* 標題（pointer-events-none 讓點擊穿透到下方箭頭/點點） */}
       <div className="absolute inset-0 flex items-center justify-center bg-black/30 z-10 pointer-events-none">
         <h1
-          className="text-3xl md:text-4xl font-bold text-white"
+          // 手機版 text-2xl，平板 md:text-4xl，電腦版 lg:text-5xl，並加入 text-center 置中與 leading-normal 行距
+          className="text-2xl md:text-4xl lg:text-5xl font-bold text-white text-center leading-normal md:leading-relaxed"
           style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
         >
           國立政治大學商學院永續財務決策研究中心
