@@ -66,8 +66,8 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-100 bg-white border-b-2 border-gray-200 py-6 lg:py-6">
-      <div className="w-full px-4 lg:px-16 flex justify-between items-center">
+    <header className="sticky top-0 z-50 bg-white border-b-2 border-gray-200 relative">
+      <div className="w-full px-4 lg:px-16 py-4 lg:py-6 flex justify-between items-center bg-white relative z-20">
         {/* 左側：Logo 和文字 */}
         <div className="flex items-center lg:gap-6">
           <div className="flex items-center justify-center shrink-0">
@@ -85,7 +85,7 @@ export default function Header() {
               className="text-base lg:text-xl font-bold text-gray-800 leading-snug"
               style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
             >
-              國立政治大學商學院永續財務決策研究中心
+              國立政治大學商學院<br className="block lg:hidden" />永續財務決策研究中心
             </h1>
             <p
               className="text-xs lg:text-sm text-gray-600"
@@ -187,7 +187,7 @@ export default function Header() {
             ))}
           </nav>
         )}
-        
+
       </div>
     </header>
   );
