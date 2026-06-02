@@ -2,14 +2,14 @@
 import React from "react";
 
 const linksData = [
-  { label: "ESG接軌IFRS永續揭露準則", href: "https://isds.tpex.org.tw/IFRS/front/#/main/home", logo: "/logos/logo.jpg" },
-  { label: "金融監督管理委員會", href: "https://www.fsc.gov.tw/ch/index.jsp", logo: "/logos/logo.jpg" },
-  { label: "證券櫃檯買賣中心", href: "https://www.tpex.org.tw/zh-tw/index.html", logo: "/logos/logo.jpg" },
-  { label: "台灣證券交易所", href: "https://www.twse.com.tw/zh/index.html", logo: "/logos/logo.jpg" },
-  { label: "台灣期貨交易所", href: "https://www.taifex.com.tw/cht/index", logo: "/logos/logo.jpg" },
-  { label: "台灣集中保管結算所", href: "https://www.tdcc.com.tw/portal/zh/", logo: "/logos/logo.jpg" },
-  { label: "財團法人會計研究發展基金會", href: "https://www.ardf.org.tw/", logo: "/logos/logo.jpg" },
-  { label: "環境部", href: "https://www.moenv.gov.tw/", logo: "/logos/logo.jpg" },
+  { label: "ESG接軌IFRS永續揭露準則", href: "https://isds.tpex.org.tw/IFRS/front/#/main/home", logo: "/logos/esg.jpg" },
+  { label: "金融監督管理委員會", href: "https://www.fsc.gov.tw/ch/index.jsp", logo: "/logos/fsc.png" },
+  { label: "證券櫃檯買賣中心", href: "https://www.tpex.org.tw/zh-tw/index.html", logo: "/logos/tpex.png" },
+  { label: "台灣證券交易所", href: "https://www.twse.com.tw/zh/index.html", logo: "/logos/twse.jpg" },
+  { label: "台灣期貨交易所", href: "https://www.taifex.com.tw/cht/index", logo: "/logos/taifex.png" },
+  { label: "台灣集中保管結算所", href: "https://www.tdcc.com.tw/portal/zh/", logo: "/logos/tdcc.png" },
+  { label: "財團法人會計研究發展基金會", href: "https://www.ardf.org.tw/", logo: "/logos/ardf.jpg" },
+  { label: "環境部", href: "https://www.moenv.gov.tw/", logo: "/logos/moenv.png" },
 ];
 
 export default function RelatedLinksPage() {
