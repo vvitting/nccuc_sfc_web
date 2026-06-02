@@ -30,18 +30,21 @@ export default function RelatedLinksPage() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col items-center justify-center p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              // 加入了 h-full 和 justify-between，確保每個卡片高度一致，文字會對齊在最底下
+              className="group flex flex-col items-center justify-between p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full"
             >
-              <div className="w-24 h-24 mb-4 flex items-center justify-center bg-gray-50 rounded-full overflow-hidden">
+              {/* 【修改重點】移除了 rounded-full 與 bg-gray-50，將寬度改為 w-full，高度設為 h-28 */}
+              <div className="w-full h-28 mb-6 flex items-center justify-center overflow-hidden">
                 <img 
                   src={item.logo} 
                   alt={`${item.label} Logo`} 
-                  className="object-contain w-full h-full p-2 group-hover:scale-110 transition-transform duration-300" 
+                  // 移除了 p-2，保留 object-contain 讓圖片自動縮放且不變形
+                  className="object-contain w-full h-full group-hover:scale-110 transition-transform duration-300" 
                 />
               </div>
               
               <h2
-                className="text-center text-lg font-bold text-gray-700 group-hover:text-blue-700 transition-colors duration-300"
+                className="text-center text-lg font-bold text-gray-700 group-hover:text-blue-700 transition-colors duration-300 mt-auto"
                 style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
               >
                 {item.label}
