@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 // 將原本 header 的資料移到這裡，並新增 logo 屬性路徑
