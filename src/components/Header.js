@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
-
   // 控制手機版「漢堡選單」的開關
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   // 控制手機版「子選單」哪個被展開 (紀錄 label 名稱)
@@ -43,7 +42,7 @@ export default function Header() {
     },
     {
       label: "永續財務相關連結",
-      href: "/related_links",
+      href: "/related_links", // 注意這裡只有 href，沒有 items
     },
   ];
 
@@ -101,7 +100,7 @@ export default function Header() {
           </svg>
         </button>
 
-        {/* 右側：電腦版導航菜單 (保留 hover 效果) */}
+        {/* 右側：電腦版導航菜單 */}
         <nav className="hidden lg:flex gap-8 items-center">
           {navItems.map((item) => (
             <div
@@ -109,28 +108,39 @@ export default function Header() {
               className="relative group"
               style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
             >
-              {/* 主選單文字 */}
-              <button
-                type="button"
-                className="text-base text-gray-700 no-underline transition-colors duration-300 hover:text-blue-800 hover:font-semibold whitespace-nowrap focus:outline-none py-4"
-              >
-                {item.label}
-              </button>
+              {/* 判斷：如果有 href 代表是單一連結，如果有 items 才是下拉選單 */}
+              {item.href ? (
+                <Link
+                  href={item.href}
+                  className="flex text-base text-gray-700 no-underline transition-colors duration-300 hover:text-blue-800 hover:font-semibold whitespace-nowrap py-4 focus:outline-none"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <button
+                  type="button"
+                  className="text-base text-gray-700 no-underline transition-colors duration-300 hover:text-blue-800 hover:font-semibold whitespace-nowrap focus:outline-none py-4"
+                >
+                  {item.label}
+                </button>
+              )}
 
-              {/* 下拉選單 (僅電腦版 hover 顯示) */}
-              <div className="absolute left-1/2 -translate-x-1/2 top-full min-w-max bg-white border border-gray-200 shadow-lg rounded-md py-2 z-50 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200">
-                {item.items.map((subItem) => (
-                  <a
-                    key={subItem.label}
-                    href={subItem.href}
-                    target={subItem.target}
-                    rel={subItem.target === "_blank" ? "noopener noreferrer" : undefined}
-                    className="block px-4 py-2 text-sm text-gray-700 whitespace-nowrap hover:bg-blue-50 hover:text-blue-800"
-                  >
-                    {subItem.label}
-                  </a>
-                ))}
-              </div>
+              {/* 下拉選單 (加入 && 判斷，確保 item.items 存在才渲染) */}
+              {item.items && item.items.length > 0 && (
+                <div className="absolute left-1/2 -translate-x-1/2 top-full min-w-max bg-white border border-gray-200 shadow-lg rounded-md py-2 z-50 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200">
+                  {item.items.map((subItem) => (
+                    <a
+                      key={subItem.label}
+                      href={subItem.href}
+                      target={subItem.target}
+                      rel={subItem.target === "_blank" ? "noopener noreferrer" : undefined}
+                      className="block px-4 py-2 text-sm text-gray-700 whitespace-nowrap hover:bg-blue-50 hover:text-blue-800"
+                    >
+                      {subItem.label}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </nav>
@@ -141,23 +151,32 @@ export default function Header() {
             {navItems.map((item) => (
               <div key={item.label} className="flex flex-col" style={{ fontFamily: "'KaiTi', '標楷體', serif" }}>
                 
-                {/* 手機版主選項按鈕 (加入 onClick) */}
-                <button
-                  onClick={() => toggleMobileDropdown(item.label)}
-                  className="flex justify-between items-center w-full text-left text-base font-bold text-gray-800 px-2 py-3 hover:bg-gray-50 rounded-md"
-                >
-                  <span>{item.label}</span>
-                  {/* 下拉箭頭圖示 */}
-                  <svg 
-                    className={`w-4 h-4 transition-transform duration-200 ${openMobileDropdown === item.label ? "rotate-180" : ""}`} 
-                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                {/* 判斷：如果是單一連結，直接跳轉；如果有子選單，則展開 */}
+                {item.href ? (
+                  <Link
+                    href={item.href}
+                    onClick={() => setIsMobileMenuOpen(false)} // 點擊後關閉選單
+                    className="flex justify-between items-center w-full text-left text-base font-bold text-gray-800 px-2 py-3 hover:bg-gray-50 rounded-md"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
+                    <span>{item.label}</span>
+                  </Link>
+                ) : (
+                  <button
+                    onClick={() => toggleMobileDropdown(item.label)}
+                    className="flex justify-between items-center w-full text-left text-base font-bold text-gray-800 px-2 py-3 hover:bg-gray-50 rounded-md"
+                  >
+                    <span>{item.label}</span>
+                    <svg 
+                      className={`w-4 h-4 transition-transform duration-200 ${openMobileDropdown === item.label ? "rotate-180" : ""}`} 
+                      fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                )}
 
-                {/* 手機版子選單 (當 openMobileDropdown 等於當前 label 時才顯示) */}
-                {openMobileDropdown === item.label && (
+                {/* 手機版子選單 (確保 openMobileDropdown 吻合 且 item.items 存在才顯示) */}
+                {openMobileDropdown === item.label && item.items && (
                   <div className="flex flex-col gap-1 pl-4 border-l-2 border-blue-200 ml-4 mb-2">
                     {item.items.map((subItem) => (
                       <a
@@ -166,19 +185,17 @@ export default function Header() {
                         target={subItem.target}
                         rel={subItem.target === "_blank" ? "noopener noreferrer" : undefined}
                         className="text-sm text-gray-600 py-2.5 px-2 hover:text-blue-600 hover:bg-blue-50 rounded-md block"
-                        onClick={() => setIsMobileMenuOpen(false)} // 點擊連結後自動關閉整個手機選單
+                        onClick={() => setIsMobileMenuOpen(false)} 
                       >
                         {subItem.label}
                       </a>
                     ))}
                   </div>
                 )}
-
               </div>
             ))}
           </nav>
         )}
-
       </div>
     </header>
   );
