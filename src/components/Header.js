@@ -37,7 +37,7 @@ export default function Header() {
       label: "中心研究成果",
       items: [
         { label: "永續財務研究", href: "/research_result/research_studies" },
-        { label: "永續財務決策方案", href: "/research_result/research_solutions" },
+        { label: "永續財務資訊揭露智慧判讀系統", href: "/research_result/research_solutions" },
       ],
     },
     {
