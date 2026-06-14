@@ -9,11 +9,11 @@ export default function AboutDirectorPage() {
           主任介紹
         </h1>
 
-        <div className="flex justify-center mb-6 lg:mb-8">
+        <div className="flex justify-center my-6 lg:my-8">
           <img
             src="/profiles/director.jpeg"
             alt="主任陳嬿如教授"
-            className="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto rounded-lg shadow-md object-cover"
+            className="w-full max-w-[260px] sm:max-w-[280px] h-auto md:max-h-[380px] rounded-xl shadow-sm border border-gray-100 object-cover object-top"
           />
         </div>
 
