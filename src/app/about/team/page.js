@@ -36,7 +36,7 @@ export default function AboutTeamPage() {
           {/* 顧問 1 */}
           <div className="flex flex-col items-center">
             <img
-              src="/profiles/consultant_one.jpg"
+              src="/profiles/team_consultant_one.jpg"
               alt="顧問 吳安妮講座教授"
               className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover object-top shadow-md border border-gray-100 mb-4"
             />
@@ -47,7 +47,7 @@ export default function AboutTeamPage() {
           {/* 顧問 2 */}
           <div className="flex flex-col items-center">
             <img
-              src="/profiles/consultant_two.jpg"
+              src="/profiles/team_consultant_two.jpg"
               alt="顧問 譚丹琪教授"
               className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover object-top shadow-md border border-gray-100 mb-4"
             />
@@ -117,7 +117,16 @@ export default function AboutTeamPage() {
               </tr>
               <tr className="border-b border-gray-100 hover:bg-gray-50">
                 <td className="px-6 py-3 text-gray-600">指導教師</td>
-                <td className="px-6 py-3 text-gray-900">翁嘉祥副教授</td>
+                <td className="px-6 py-3 text-gray-900">
+                  <a 
+                    href="https://acct.nccu.edu.tw/zh_tw/Faculty/%E7%BF%81%E5%98%89%E7%A5%A5-30170712" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
+                  >
+                  翁嘉祥副教授
+                  </a>
+                </td>
               </tr>
               <tr className="border-b border-gray-100 hover:bg-gray-50">
                 <td className="px-6 py-3 text-gray-600">博士班兼任研究人員</td>
@@ -142,7 +151,16 @@ export default function AboutTeamPage() {
               </tr>
               <tr className="border-b border-gray-100 hover:bg-gray-50">
                 <td className="px-6 py-3 text-gray-600">指導教師</td>
-                <td className="px-6 py-3 text-gray-900">梁嘉紋教授</td>
+                <td className="px-6 py-3 text-gray-900">
+                  <a 
+                    href="https://acct.nccu.edu.tw/zh_tw/Faculty/%E6%A2%81%E5%98%89%E7%B4%8B-97588226" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
+                  >
+                  梁嘉紋教授
+                  </a>
+                </td>
               </tr>
               <tr className="border-b border-gray-100 hover:bg-gray-50">
                 <td className="px-6 py-3 text-gray-600">博士班兼任研究人員</td>
@@ -166,7 +184,16 @@ export default function AboutTeamPage() {
                 <td colSpan={2} className="px-6 py-3 font-bold text-gray-800">機器學習組</td>
               </tr>
               <tr className="border-b border-gray-100 hover:bg-gray-50">
-                <td className="px-6 py-3 text-gray-600">指導教師</td>
+                <td className="px-6 py-3 text-gray-900">
+                  <a 
+                    href="https://mis2.nccu.edu.tw/zh_tw/Faculty/Faculty_01/%E6%9E%97%E6%80%A1%E4%BC%B6-39408961" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
+                  >
+                  林怡伶教授
+                  </a>
+                </td>
                 <td className="px-6 py-3 text-gray-900">林怡伶副教授</td>
               </tr>
               <tr className="border-b border-gray-100 hover:bg-gray-50">
@@ -195,7 +222,7 @@ export default function AboutTeamPage() {
           <img
             src="/profiles/team_tree_diagram.jpg" 
             alt="成員架構圖"
-            className="w-full max-w-4xl h-auto rounded-lg shadow-sm border border-gray-100 object-contain"
+            className="w-full max-w-xl h-auto rounded-lg shadow-sm border border-gray-100 object-contain"
           />
         </div>
 
