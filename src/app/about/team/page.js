@@ -184,6 +184,7 @@ export default function AboutTeamPage() {
                 <td colSpan={2} className="px-6 py-3 font-bold text-gray-800">機器學習組</td>
               </tr>
               <tr className="border-b border-gray-100 hover:bg-gray-50">
+                <td className="px-6 py-3 text-gray-600">指導教師</td>
                 <td className="px-6 py-3 text-gray-900">
                   <a 
                     href="https://mis2.nccu.edu.tw/zh_tw/Faculty/Faculty_01/%E6%9E%97%E6%80%A1%E4%BC%B6-39408961" 
@@ -191,10 +192,9 @@ export default function AboutTeamPage() {
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                   >
-                  林怡伶教授
+                  林怡伶副教授
                   </a>
                 </td>
-                <td className="px-6 py-3 text-gray-900">林怡伶副教授</td>
               </tr>
               <tr className="border-b border-gray-100 hover:bg-gray-50">
                 <td className="px-6 py-3 text-gray-600">碩士班兼任研究人員</td>
