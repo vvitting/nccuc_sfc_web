@@ -9,6 +9,14 @@ export default function AboutDirectorPage() {
           主任介紹
         </h1>
 
+        <div className="flex justify-center mb-6 lg:mb-8">
+          <img
+            src="/profiles/director.jpeg"
+            alt="主任陳嬿如教授"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto rounded-lg shadow-md object-cover"
+          />
+        </div>
+
         <p
           className="leading-relaxed lg:leading-8 text-gray-700 text-justify text-base lg:text-lg"
           style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
