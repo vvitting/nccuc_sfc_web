@@ -69,8 +69,13 @@ export const thesesByYear = [
       },
       {
         title:
-          "蕭琦、翁嘉祥；大股東ESG關注程度與公司ESG風險之關聯",
-        href: "https://hdl.handle.net/11296/yb5z4w",
+          "羅瑞金、周冠男、梁嘉紋；從眾行為、消費依賴與永續轉型：以電商品牌為策略觀點",
+        href: "https://hdl.handle.net/11296/q527mv",
+      },
+      {
+        title:
+          "王子云、林怡伶；運用 LLM、RAG 與提示工程於永續報告書中的風險識別",
+        href: "https://hdl.handle.net/11296/ksc9qf",
       },
     ],
   },

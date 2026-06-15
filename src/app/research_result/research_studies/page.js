@@ -11,7 +11,7 @@ export default function ResearchStudiesPage() {
           永續財務研究
         </h1>
 
-        <div className="space-y-8 pl-3">
+        <div className="space-y-8 pl-4">
           {thesesByYear.map(({ year, theses }) => (
             <div key={year}>
               <h2
@@ -23,17 +23,17 @@ export default function ResearchStudiesPage() {
 
               {theses.length === 0 ? (
                 <p
-                  className="text-gray-500 text-base lg:text-lg pl-3"
+                  className="text-gray-500 text-base lg:text-lg pl-12"
                   style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
                 >
                   （待補充）
                 </p>
               ) : (
-                <ol className="list-decimal list-inside space-y-3 pl-3">
+                <ol className="list-decimal list-outside space-y-3 pl-12">
                   {theses.map(({ title, href }, idx) => (
                     <li
                       key={idx}
-                      className="text-base lg:text-lg leading-relaxed lg:leading-8 text-gray-700"
+                      className="text-base lg:text-lg leading-relaxed lg:leading-8 text-gray-700 pl-1"
                       style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
                     >
                       <a
