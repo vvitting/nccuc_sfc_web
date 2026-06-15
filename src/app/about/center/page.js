@@ -6,7 +6,7 @@ export default function AboutCenterPage() {
           className="text-2xl lg:text-3xl font-bold text-gray-800 mb-4 lg:mb-6"
           style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
         >
-          中心介紹
+          中心介紹 
         </h1>
 
         <p

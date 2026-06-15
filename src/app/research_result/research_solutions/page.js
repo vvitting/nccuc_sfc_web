@@ -9,7 +9,7 @@ export default function ResearchSolutionsPage() {
           className="text-2xl lg:text-3xl font-bold text-gray-800 mb-3 lg:mb-6"
           style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
         >
-          永續財務資訊揭露智慧判讀系統
+          永續財務資訊揭露智慧判讀系統 
         </h1>
 
         {/* 第一張圖 */}

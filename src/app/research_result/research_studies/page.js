@@ -8,7 +8,7 @@ export default function ResearchStudiesPage() {
           className="text-2xl lg:text-3xl font-bold text-gray-800 mb-6 lg:mb-8"
           style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
         >
-          永續財務研究
+          永續財務研究 
         </h1>
 
         <div className="space-y-8 pl-4">

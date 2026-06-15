@@ -167,6 +167,6 @@ export const thesesByYear = [
           "林玟萱、林佳賢、黃冠瑛；家族企業董事會性別多元化與ESG績效之關聯",
         href: "https://hdl.handle.net/11296/bm768w",
       },
-    ],
+    ], 
   },
 ];
