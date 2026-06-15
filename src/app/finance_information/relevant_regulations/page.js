@@ -19,7 +19,7 @@ export default function AboutContactPage() {
           <button
             onClick={() => setActiveTab('international')} 
             style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
-            className={`text-2xl pb-2 -mb-[1px] transition-colors border-b-2 ${
+            className={`text-[22px] pb-2 -mb-[1px] transition-colors border-b-2 ${
               activeTab === 'international'
                 ? 'text-emerald-700 border-emerald-700 font-bold' 
                 : 'text-gray-500 border-transparent hover:text-emerald-600 hover:border-gray-300'
@@ -31,7 +31,7 @@ export default function AboutContactPage() {
           <button
             onClick={() => setActiveTab('taiwan')} 
             style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
-            className={`text-2xl pb-2 -mb-[1px] transition-colors border-b-2 ${
+            className={`text-[22px] pb-2 -mb-[1px] transition-colors border-b-2 ${
               activeTab === 'taiwan'
                 ? 'text-emerald-700 border-emerald-700 font-bold'
                 : 'text-gray-500 border-transparent hover:text-emerald-600 hover:border-gray-300'
@@ -46,7 +46,7 @@ export default function AboutContactPage() {
         <div className="max-w-3xl mx-auto"></div>
         {activeTab === 'international' && (
             <ul 
-              className="list-disc pl-30 leading-relaxed lg:leading-8 text-gray-700 text-base lg:text-xl space-y-3"
+              className="list-disc pl-30 leading-relaxed lg:leading-8 text-gray-700 text-base lg:text-lg space-y-3"
             >
             {International_regulations.map((item, index) => (
                 <li key={index} className="pl-4">
@@ -66,7 +66,7 @@ export default function AboutContactPage() {
 
             {activeTab === 'taiwan' && (
             <ul 
-              className="list-disc pl-30 leading-relaxed lg:leading-8 text-gray-700 text-base lg:text-xl space-y-3"
+              className="list-disc pl-30 leading-relaxed lg:leading-8 text-gray-700 text-base lg:text-lg space-y-3"
             >
             {Taiwan_regulations.map((item, index) => (
                 <li key={index} className="pl-4">
