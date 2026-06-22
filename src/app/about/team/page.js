@@ -134,7 +134,7 @@ export default function AboutTeamPage() {
               </tr>
               <tr className="border-b border-gray-100 hover:bg-gray-50">
                 <td className="px-6 py-3 text-gray-600">兼任研究人員</td>
-                <td className="px-6 py-3 text-gray-900">張  葳小姐</td>
+                <td className="px-6 py-3 text-gray-900">張  崴小姐</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50">
                 <td className="px-6 py-3 text-gray-600">兼任研究人員</td>
