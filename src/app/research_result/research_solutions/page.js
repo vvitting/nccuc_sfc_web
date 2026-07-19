@@ -36,7 +36,7 @@ export default function ResearchSolutionsPage() {
           className="leading-relaxed lg:leading-8 text-gray-700 text-justify text-base lg:text-lg mb-3"
           style={{ fontFamily: "'KaiTi', '標楷體', serif" }}
         >
-          中心依據近年研究經驗，使用AI開發-永續財務資訊揭露智慧判讀系統(Sustainability-related Financial Disclosure – Smart Evaluation System)。此系統彌補現有工具在永續資訊判讀上的缺口、解決現行技術於中文永續資訊判讀上之語意落差與文化適配不足問題。本系統可協助及應用在：
+          中心依據近年研究經驗，使用AI開發-永續財務資訊揭露智慧判讀系統(Sustainable Finance Reporting Evaluation)。此系統彌補現有工具在永續資訊判讀上的缺口、解決現行技術於中文永續資訊判讀上之語意落差與文化適配不足問題。本系統可協助及應用在：
         </p>
 
         <ol
